@@ -12,4 +12,10 @@
     <artifactId>util</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+        </dependency>
+    </dependencies>
 </project>

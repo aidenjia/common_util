@@ -1,10 +1,4 @@
 HELP.md
-ddhz_activity_api/target/
-ddhz_activity_service/target/
-ddhz_activity_admin/target/
-ddhz_activity_rpc_api/target/
-ddhz_activity_task/target/
-!.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
 .apt_generated
@@ -20,6 +14,7 @@ ddhz_activity_task/target/
 *.iws
 *.iml
 *.ipr
+/target/
 
 ### NetBeans ###
 /nbproject/private/
