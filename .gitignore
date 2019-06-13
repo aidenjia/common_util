@@ -1,29 +1,20 @@
-HELP.md
+# Global
+target
+*.log
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
+# Eclipse
 .project
+.classpath
 .settings
-.springBeans
-.sts4-cache
-workspace.xml
+.metadata
 
-### IntelliJ IDEA ###
+# IntelliJ
 .idea
-*.iws
 *.iml
-*.ipr
-target/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-/build/
+# Svn
+.svn
 
-### VS Code ###
-.vscode/
+# Maven
+release.properties
+*.releaseBackup
