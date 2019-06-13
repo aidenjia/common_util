@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48eecbbd-ada7-47bb-b5ad-46d143415be4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/util/util.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/jia/demo/AtomicBooleanDemo$BarWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/jia/demo/AtomicBooleanDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/jia/demo/MaoPaoDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/jia/demo/MapNewAdvance$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/jia/demo/MapNewAdvance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/classes/com/jia/demo/XuanZeDemo.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/demo/target/" />
@@ -19,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+            <state relative-caret-position="446">
+              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -49,17 +51,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/jia/demo/MaoPaoDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="115">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="345">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -135,6 +137,22 @@
         <option name="userSettingsFile" value="D:\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="commons_util" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="commons_util" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -236,7 +254,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560430554164" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560430644206" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -292,17 +310,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560428858900</updated>
-      <workItem from="1560428861452" duration="1524000" />
+      <workItem from="1560428861452" duration="1780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1524000" />
+    <option name="totallyTimeSpent" value="1780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3782837" visible="true" weight="0.27985075" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3782837" visible="true" weight="0.24200426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -313,7 +332,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31991294" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21041214" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2462039" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2883569" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -322,9 +341,9 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.16204691" side_tool="true" weight="0.37758434" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.19936034" weight="0.13991323" />
       <window_info anchor="bottom" id="Spring" order="10" sideWeight="0.49573562" weight="0.32861805" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.8512793" visible="true" weight="0.2548807" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8512793" weight="0.24186552" />
       <window_info anchor="bottom" auto_hide="true" content_ui="combo" id="Run Dashboard" order="12" sideWeight="0.8379531" weight="0.47116432" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Maven" visible="true" weight="0.28304905" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -386,13 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/jia/demo/AtomicBooleanDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
@@ -402,15 +414,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/jia/demo/MaoPaoDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="115">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="345">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
         </state>
       </provider>
     </entry>
