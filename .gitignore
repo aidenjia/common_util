@@ -18,8 +18,5 @@ target
 # Maven
 release.properties
 *.releaseBackup
-demo/src/main/resources/
-demo/src/test/
-util/src/main/resources/
-util/src/test/
 /.idea/workspace.xml
+/.gitignore
