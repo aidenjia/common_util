@@ -37,8 +37,9 @@ public class MobileAesUtil {
     }
 
     public static void main(String[] args) throws Exception{
-        System.out.println(descrypt("EYWF7oMLB2DHOUMou4b9/A=="));
-        System.out.println(descrypt("mkhVU9ncigokX3heLyKYTw=="));
+       // System.out.println(descrypt("0JpRK62xuaxhY0AOzk1mA=="));
+        //System.out.println(descrypt("q2Ymt0+fJ4716YU+QYPyiQ=="));
+        System.out.println(encrypt("13862010842"));
     }
 
 }
