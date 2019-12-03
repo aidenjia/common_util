@@ -14,9 +14,9 @@ public class CustomerAscyTest {
         props.put("bootstrap.servers", "zoo-1:9092,zoo-2:9092,zoo-3:9092"); //这里的localhost可以改成机器名或ip
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
-        props.setProperty("group.id", "0");
-        props.setProperty("enable.auto.commit", "false");
-        props.setProperty("auto.offset.reset", "earliest");
+        props.put("group.id", "0");
+        props.put("enable.auto.commit", "false");
+        props.put("auto.offset.reset", "earliest");
         KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(props);
         consumer.subscribe(Arrays.asList(topic));
         try {

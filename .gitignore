@@ -20,3 +20,4 @@ release.properties
 *.releaseBackup
 /.idea/workspace.xml
 /.gitignore
+*.xml
