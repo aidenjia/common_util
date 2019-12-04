@@ -1,4 +1,4 @@
-package com.jia.demo;
+package com.jia.demo.paixu;
 
 public class XuanZeDemo {
     public static void main(String[] args) {

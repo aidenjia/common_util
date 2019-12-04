@@ -1,4 +1,4 @@
-package com.jia.demo;
+package com.jia.demo.paixu;
 
 import java.util.HashMap;
 import java.util.Map;

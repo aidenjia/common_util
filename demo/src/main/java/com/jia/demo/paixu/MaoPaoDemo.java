@@ -1,4 +1,4 @@
-package com.jia.demo;
+package com.jia.demo.paixu;
 
 public class MaoPaoDemo {
 
