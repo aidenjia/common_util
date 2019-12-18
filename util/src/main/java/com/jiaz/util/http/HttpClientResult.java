@@ -1,4 +1,4 @@
-package com.jiaz.util.util;
+package com.jiaz.util.http;
 
 import java.io.Serializable;
 

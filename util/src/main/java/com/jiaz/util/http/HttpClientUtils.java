@@ -1,5 +1,6 @@
-package com.jiaz.util.util;
+package com.jiaz.util.http;
 
+import com.jiaz.util.http.HttpClientResult;
 import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.config.RequestConfig;
@@ -67,7 +68,6 @@ public class HttpClientUtils {
                 uriBuilder.setParameter(entry.getKey(), entry.getValue());
             }
         }
-
         // 创建http对象
         HttpGet httpGet = new HttpGet(uriBuilder.build());
         /**
@@ -78,13 +78,10 @@ public class HttpClientUtils {
          */
         RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(CONNECT_TIMEOUT).setSocketTimeout(SOCKET_TIMEOUT).build();
         httpGet.setConfig(requestConfig);
-
         // 设置请求头
         packageHeader(headers, httpGet);
-
         // 创建httpResponse对象
         CloseableHttpResponse httpResponse = null;
-
         try {
             // 执行请求并获得响应结果
             return getHttpClientResult(httpResponse, httpClient, httpGet);
@@ -178,11 +175,8 @@ public class HttpClientUtils {
         HttpPut httpPut = new HttpPut(url);
         RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(CONNECT_TIMEOUT).setSocketTimeout(SOCKET_TIMEOUT).build();
         httpPut.setConfig(requestConfig);
-
         packageParam(params, httpPut);
-
         CloseableHttpResponse httpResponse = null;
-
         try {
             return getHttpClientResult(httpResponse, httpClient, httpPut);
         } finally {
@@ -203,7 +197,6 @@ public class HttpClientUtils {
         if (params == null) {
             params = new HashMap<String, String>();
         }
-
         params.put("_method", "delete");
         return doPost(url, params);
     }
@@ -241,7 +234,6 @@ public class HttpClientUtils {
             for (Map.Entry<String, String> entry : entrySet) {
                 nvps.add(new BasicNameValuePair(entry.getKey(), entry.getValue()));
             }
-
             // 设置到请求的http对象中
             httpMethod.setEntity(new UrlEncodedFormEntity(nvps, ENCODING));
         }
@@ -287,7 +279,6 @@ public class HttpClientUtils {
             httpClient.close();
         }
     }
-
 
 
     public static void main(String[] args) throws Exception {

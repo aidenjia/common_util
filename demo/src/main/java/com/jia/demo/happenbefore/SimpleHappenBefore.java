@@ -11,18 +11,19 @@ public class SimpleHappenBefore {
     /**
      * 这是一个验证结果的变量
      */
-    private static volatile int a = 0;
+    private static int a = 0;
     /**
      * 这是一个标志位
      */
-    private static volatile boolean flag = false;
+    private static boolean flag = false;
 
     public static void main(String[] args) throws InterruptedException {
         //由于多线程情况下未必会试出重排序的结论,所以多试一些次
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10000; i++) {
             ThreadA threadA = new ThreadA();
             ThreadB threadB = new ThreadB();
             threadA.start();
+            //join 方法 保证线程的执行顺序
             threadA.join();
             threadB.start();
             //这里等待线程结束后,重置共享变量,以使验证结果的工作变得简单些.

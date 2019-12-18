@@ -1,5 +1,8 @@
-package com.jiaz.util.util;
+package com.jiaz.http;
 
+
+import com.jiaz.util.http.HttpClientResult;
+import com.jiaz.util.http.HttpClientUtils;
 
 import java.util.HashMap;
 import java.util.Map;

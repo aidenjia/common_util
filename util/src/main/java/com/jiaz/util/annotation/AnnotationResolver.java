@@ -1,4 +1,4 @@
-package com.jiaz.util;
+package com.jiaz.util.annotation;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;

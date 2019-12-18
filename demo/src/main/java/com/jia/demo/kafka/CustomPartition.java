@@ -23,10 +23,10 @@ public class CustomPartition implements Partitioner {
     @Override
     public int partition(String topic, Object key, byte[] keyBytes, Object value, byte[] valueBytes, Cluster cluster) {
         List<PartitionInfo> partitionInfoList = cluster.partitionsForTopic(topic);
-        int numPartition = partitionInfoList.size();
-        int hasCode = key.hashCode();
+    int numPartition = partitionInfoList.size();
+    int hasCode = key.hashCode();
         return hasCode % numPartition;
-    }
+}
 
     @Override
     public void close() {

@@ -44,7 +44,6 @@ public class ProducerTest {
              */
             ProducerRecord<String, String> record = new ProducerRecord<>("test-topic", String.valueOf(i));
             try {
-                //RecordMetadata metadata = producer.send(record).get();
                 Future<RecordMetadata> recordMetadataFuture = producer.send(record, new Callback() {
                     @Override
                     public void onCompletion(RecordMetadata recordMetadata, Exception e) {

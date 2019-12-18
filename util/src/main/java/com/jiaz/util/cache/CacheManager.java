@@ -1,4 +1,4 @@
-package com.jiaz.util;
+package com.jiaz.util.cache;
 
 import java.util.LinkedList;
 import java.util.Map;
@@ -9,19 +9,14 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class CacheManager {
     private CacheManager() {
     }
-
     //是否开启清除失效缓存
     private volatile Boolean clearExpireCacheEnable = true;
-
     //缓存失效时间
     private   long cacheTimeout = 12 * 60 * 60 * 1000L;
-
     //缓存使用记录
     private static final LinkedList<Object> cacheUseRecord = new LinkedList<>();
-
     //可缓存最大数量
     private static final Integer MAX_CACHE_SIZE = 80;
-
     //重入读写锁
     private static final ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
     private static final Lock writeLock = reentrantReadWriteLock.writeLock();
@@ -95,15 +90,12 @@ public class CacheManager {
     //失效时间，value，entry，可根据需要决定是否继承Map.Entry<K,V>
     private class CacheEntry {
         long lastTouchTime;
-
         Object value;
-
         CacheEntry(Object value) {
             super();
             this.value = value;
             this.lastTouchTime = System.currentTimeMillis();
         }
-
         public void setLastTouchTime(long lastTouchTime) {
             this.lastTouchTime = lastTouchTime;
         }
@@ -111,7 +103,6 @@ public class CacheManager {
 
 
     public Object get(Object key) {
-
         readLock.lock();
         CacheEntry entry = null;
         try {
@@ -120,12 +111,10 @@ public class CacheManager {
             readLock.unlock();
         }
         if (null == entry) {return null;}
-
         //更新缓存访问时间
         touchCache(entry);
         //更新使用记录
         touchUseRecord(key);
-
         return entry == null ? null : entry.value;
     }
 
@@ -162,9 +151,7 @@ public class CacheManager {
         if (cacheEntryMap.size() > MAX_CACHE_SIZE) {
             throw new Exception("缓存大小超出限制");
         }
-
         CacheEntry entry = new CacheEntry(value);
-
         writeLock.lock();
         try {
             cacheEntryMap.put(key, entry);
@@ -216,8 +203,7 @@ public class CacheManager {
 
     public static void main(String[] args) throws Exception {
         CacheManager cacheManager = CacheManager.getCacheManagerInstance();
-        cacheManager.init(0);
-
+        cacheManager.init(11);
         for (int i = 0; i < 200; i++) {
             cacheManager.put(i + "", i);
         }

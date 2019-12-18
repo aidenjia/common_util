@@ -1,4 +1,4 @@
-package com.jia.demo.niodemo;
+package com.jia.demo.niodemo.commonio;
 
 import java.io.IOException;
 import java.net.Socket;

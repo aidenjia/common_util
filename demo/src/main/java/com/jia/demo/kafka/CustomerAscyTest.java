@@ -26,6 +26,7 @@ public class CustomerAscyTest {
                     System.out.println(record);
                 }
                 consumer.commitAsync();
+                //consumer.commitSync();
 
             }
         } finally {
