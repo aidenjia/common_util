@@ -21,11 +21,11 @@ public class NettyClient {
                 .channel(NioSocketChannel.class)
                 // 3.IO 处理逻辑
                 .handler(new ChannelInitializer<SocketChannel>() {
-                    @Override
-                    public void initChannel(SocketChannel ch) {
-                        ch.pipeline().addLast(new FirstClientHandler());
-                    }
-                });
+            @Override
+            public void initChannel(SocketChannel ch) {
+                ch.pipeline().addLast(new FirstClientHandler());
+            }
+        });
         // 4.建立连接
         bootstrap.connect("127.0.0.1", 20000).addListener(future -> {
             if (future.isSuccess()) {
