@@ -1,4 +1,4 @@
-package com.jia.demo;
+package com.jia.demo.atomicdemo;
 
 import java.util.concurrent.TimeUnit;
 
