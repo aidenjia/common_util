@@ -1,6 +1,6 @@
 package com.jiaz.util.http;
 
-import com.jiaz.util.http.HttpClientResult;
+
 import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.config.RequestConfig;
@@ -16,6 +16,10 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.*;
 
+/**
+ * 不可取-不能设置超时时间
+ */
+@Deprecated
 public class HttpClientUtils {
     // 编码格式。发送编码格式统一用UTF-8
     private static final String ENCODING = "UTF-8";

@@ -2,6 +2,7 @@ package com.jiaz.util.http;
 
 import java.io.Serializable;
 
+@Deprecated
 public class HttpClientResult implements Serializable {
 
 
