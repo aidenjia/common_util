@@ -10,8 +10,8 @@ public class PokerCard {
 
     private ColorEnum color;
     private PokerNumEnum number;
-    private boolean sendFlag;
     private static Map<ColorEnum, Integer> colorNumMap;
+    private Integer reformCardCode;
 
     enum ColorEnum {
         HEART("heart"), SPADE("spade"), DIAMOND("diamond"), CLUB("club");
@@ -38,15 +38,15 @@ public class PokerCard {
     public PokerCard() {
     }
 
-    public PokerCard(ColorEnum color, PokerNumEnum number) {
+    public PokerCard(ColorEnum color, PokerNumEnum number, Integer reformCardCode) {
         this.color = color;
         this.number = number;
-        sendFlag =false;
-        colorNumMap= new ConcurrentHashMap();
-        colorNumMap.put(color.HEART,0);
-        colorNumMap.put(color.DIAMOND,0);
-        colorNumMap.put(color.SPADE,0);
-        colorNumMap.put(color.CLUB,0);
+        colorNumMap = new ConcurrentHashMap();
+        colorNumMap.put(color.HEART, 0);
+        colorNumMap.put(color.DIAMOND, 0);
+        colorNumMap.put(color.SPADE, 0);
+        colorNumMap.put(color.CLUB, 0);
+        this.reformCardCode = reformCardCode;
     }
 
 
@@ -72,6 +72,7 @@ public class PokerCard {
         int result = 17;
         result = 31 * result + (number == null ? 0 : number.hashCode());
         result = 31 * result + (color == null ? 0 : color.hashCode());
+        result = 31 * result + (reformCardCode.hashCode());
         return result;
     }
 
@@ -89,17 +90,16 @@ public class PokerCard {
     }
 
     /**
-     *
      * @param pokerCard1
      * @param pokerCard2
      * @return 1 represent bigger 0 represent equal -1 represent smaller
      */
-    public static int CompareTo(PokerCard pokerCard1,PokerCard pokerCard2) {
-       int result=colorNumMap.get(pokerCard1.color).compareTo(colorNumMap.get(pokerCard2.color));
-       if(result==0){
-           result=pokerCard1.number.num.compareTo(pokerCard2.number.num);
-       }
-       return result;
+    public static int CompareTo(PokerCard pokerCard1, PokerCard pokerCard2) {
+        int result = colorNumMap.get(pokerCard1.color).compareTo(colorNumMap.get(pokerCard2.color));
+        if (result == 0) {
+            result = pokerCard1.number.num.compareTo(pokerCard2.number.num);
+        }
+        return result;
     }
 
     public ColorEnum getColor() {
@@ -118,11 +118,4 @@ public class PokerCard {
         this.number = number;
     }
 
-    public boolean isSendFlag() {
-        return sendFlag;
-    }
-
-    public void setSendFlag(boolean sendFlag) {
-        this.sendFlag = sendFlag;
-    }
 }
