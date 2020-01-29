@@ -52,7 +52,7 @@ public class Game {
                 thread.start();
                 thread.join();
             }
-            System.out.println("numResult=" + numResult);
+            System.out.println("result=" + numResult);
             if (numResult >= ruleSum) {
                 System.out.println("player win game over!!");
                 break;
