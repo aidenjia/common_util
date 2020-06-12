@@ -16,7 +16,7 @@ public class Game {
         this.threadCount = threadCount;
         ***REMOVED***
         for (int i = 1; i <= threadCount; i++) {
-            Player player = new Player("player" + i, String.valueOf(i));
+            ***REMOVED***
             playerList.add(player);
         }
         for (PokerCard.PokerNumEnum numEnum : PokerCard.PokerNumEnum.values()) {
