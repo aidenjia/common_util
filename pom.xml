@@ -12,6 +12,7 @@
     <modules>
         <module>demo</module>
         <module>util</module>
+        <module>springboot-demo</module>
     </modules>
 
     <dependencyManagement>
@@ -103,6 +104,11 @@
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp</artifactId>
                 <version>3.9.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>2.1.1.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
