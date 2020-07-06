@@ -12,5 +12,6 @@ public class LogTest {
        logger.error("logback 成功了");
        logger.debug("logback 成功了");
        logger.warn("logback 成功了");  
+        logger.warn("success");
    }
 }
