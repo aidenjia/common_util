@@ -1,0 +1,2 @@
+com.jia.demo.spi.MongoRepository
+com.jia.demo.spi.MysqlRepository

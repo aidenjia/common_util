@@ -62,7 +62,7 @@ public class MapNewAdvance {
             public Object apply(Object key, Object value) {
                 return key + ":" + value;
             }
-        }));//3:val_3 -》用返回值覆盖原来的值，这里用了java7的编码方式，以下均采用java8的lanbda表达式
+        }));//3:val_3 -》用返回值覆盖原来的值，这里用了java7的编码方式，以下均采用java8的lambda表达式
         System.out.println(map.compute(10, (key, value) -> {
             return value.split("_")[1];
         }));//666666 -》用返回值覆盖原来的值
