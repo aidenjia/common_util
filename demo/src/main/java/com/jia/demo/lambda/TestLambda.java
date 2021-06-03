@@ -1,5 +1,7 @@
 package com.jia.demo.lambda;
 
+import java.util.List;
+
 public class TestLambda {
 
     static class FuncClass2 implements FuncInterface{
@@ -36,6 +38,7 @@ public class TestLambda {
 
         funcInterface=()->System.out.println("I like Lambda5");
         funcInterface.funcInter();
+
     }
 }
 
