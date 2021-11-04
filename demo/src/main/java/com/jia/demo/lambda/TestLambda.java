@@ -42,6 +42,7 @@ public class TestLambda {
     }
 }
 
+@FunctionalInterface
 interface FuncInterface {
     void funcInter();
 }
