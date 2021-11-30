@@ -13,5 +13,10 @@ public class LogTest {
        logger.debug("logback 成功了");
        logger.warn("logback 成功了");  
         logger.warn("success");
+        try {
+           int i=1/0;
+        }catch (Exception e){
+            logger.error("hhh:{}",e.getStackTrace());
+        }
    }
 }

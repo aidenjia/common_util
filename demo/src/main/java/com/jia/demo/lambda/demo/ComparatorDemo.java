@@ -1,5 +1,6 @@
 package com.jia.demo.lambda.demo;
 
+import java.util.Calendar;
 import java.util.Comparator;
 
 public class ComparatorDemo {
@@ -12,5 +13,6 @@ public class ComparatorDemo {
         };
 
         Comparator<Apple> byWeight2=(a1,a2)->a1.getWeight().compareTo(a2.getWeight());
+
     }
 }

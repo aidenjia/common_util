@@ -13,6 +13,7 @@
         <module>demo</module>
         <module>util</module>
         <module>springboot-demo</module>
+        <module>test</module>
     </modules>
 
     <dependencyManagement>
