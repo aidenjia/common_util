@@ -1,4 +1,4 @@
-package com.jia.demo.paixu;
+package com.jia.demo.algorithm.paixu;
 
 public class MaoPaoDemo {
     public static void main(String[] args) {

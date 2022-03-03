@@ -1,4 +1,4 @@
-package com.jia.demo.paixu;
+package com.jia.demo.algorithm.paixu;
 
 import java.util.Arrays;
 
