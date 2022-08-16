@@ -17,7 +17,6 @@ public class VoliateDemo {
      */
     public static void main(String[] args) {
        // seyOkByVolatile();
-
         MyData myData  =  new MyData();//资源类
         for (int i = 1; i <20 ; i++) {
             new Thread(() -> {
