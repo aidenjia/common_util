@@ -1,6 +1,7 @@
 package com.jia.demo.optionaldemo;
 
 import java.util.Optional;
+import java.util.function.Consumer;
 
 public class OptionalDemo {
     public static void main(String[] args) {
@@ -10,6 +11,7 @@ public class OptionalDemo {
 //                optPerson.map(Person::getCar)
 ////                        .map(Car::getInsurance)
 ////                       .map(Insurance::getName);
+        Consumer<Person> personConsumer = (Person p) -> p.getCar();
     }
 
     public String getCarInsuranceName(Optional<Person> person) {
