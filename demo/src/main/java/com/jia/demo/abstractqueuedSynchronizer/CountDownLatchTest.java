@@ -1,7 +1,5 @@
 package com.jia.demo.abstractqueuedSynchronizer;
 
-import java.util.concurrent.CountDownLatch;
-
 public class CountDownLatchTest {
     public static void main(String[] args) {
         final java.util.concurrent.CountDownLatch latch = new java.util.concurrent.CountDownLatch(2);
