@@ -1,52 +1,56 @@
 package com.jia.demo.algorithm.linkedListDemo;
 
 public class MyLinkedList {
-    int size;
-    ListNode head;
 
-    public MyLinkedList(){
-        size=0;
-        head=new ListNode(0);
-    }
+  int size;
+  ListNode head;
 
-    //获取第index个节点
-    public int get(int index){
-        if(index<0||index>=size){
-            return -1;
-        }
-        ListNode currentNode=head;
-        for(int i=0;i<=index;i++){
-            currentNode=currentNode.next;
-        }
-        return currentNode.value;
-    }
+  public MyLinkedList() {
+    size = 0;
+    head = new ListNode(0);
+  }
 
-    public void addIndex(int index,int value){
-        if(index>size){
-            return;
-        }
-        if(index<0){
-            index=0;
-        }
-        size++;
-        ListNode pred=head;
-        for(int i=0;i<index;i++){
-            pred=pred.next;
-        }
-        ListNode addNode=new ListNode(value);
-        addNode.next=pred.next;
-        pred.next=addNode;
+  //在链尾增加节点
+  public void add(ListNode node) {
+    ListNode temp = head;
+    while (temp.next != null) {
+      temp = temp.next;
     }
+    size++;
+    temp.next = node;
+  }
 
-    public void removeNode(int index){
-        if (index < 0 || index >= size) {
-            return;
-        }
-        size--;
-        ListNode pred=head;
-        for(int i=0;i<index;i++){
-            pred=pred.next;
-        }
-        pred.next=pred.next.next;
+  //在链头插入节点
+  public void addEnd(ListNode node) {
+    if (head == null) {
+      size++;
+      head = node;
+      return;
     }
+    node.next = head;
+    size++;
+    head = node;
+  }
+
+  // 删除某个节点
+  public void remove(int val) {
+    while (head != null) {
+      if (head.value != val) {
+        break;
+      }
+      head = head.next;
+    }
+    ListNode cur = head;
+    ListNode pre = head;
+    while (cur != null) {
+      if (cur.value == val) {
+        pre.next = cur.next;
+      } else {
+        pre = cur;
+      }
+      cur = cur.next;
+    }
+  }
+
+
 }
